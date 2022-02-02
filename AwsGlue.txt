@@ -1,0 +1,75 @@
+What is ETL(https://www.oracle.com/integration/what-is-etl/)
+abberviation Extract Transfer and Load
+Extract, transform, and load (ETL) is the process data-driven organizations use to gather data from multiple sources and then bring it together to support discovery, reporting, analysis, and decision-making.
+
+The data sources can be very diverse in type, format, volume, and reliability, so the data needs to be processed to be useful when brought together. The target data stores may be databases, data warehouses, or data lakes, depending on the goals and technical implementation.
+
+The three distinct steps of ETL
+Extract
+During extraction, ETL identifies the data and copies it from its sources, so it can transport the data to the target datastore. The data can come from structured and unstructured sources, including documents, emails, business applications, databases, equipment, sensors, third parties, and more.
+Transform
+Because the extracted data is raw in its original form, it needs to be mapped and transformed to prepare it for the eventual datastore. In the transformation process, ETL validates, authenticates, deduplicates, and/or aggregates the data in ways that make the resulting data reliable and queryable.
+Load
+ETL moves the transformed data into the target datastore. This step can entail the initial loading of all the source data, or it can be the loading of incremental changes in the source data. You can load the data in real time or in scheduled batches.
+
+
+AWS Glue(https://www.youtube.com/watch?v=Qpv7BzOM-UI)
+AWS Glue is fully managed ETL service that makes it simple and cost effective to categories your data, clean it, enrich it, and move it reliably between various data stores
+
+Crawler
+
+Aws Components:
+central meta data repostry : AWS Glue Data Catalog
+ETL Engine: Automatically generates python or scala code
+Scheduler: Dependency Resolution, job monitering and retrace
+
+AWS Glue Usage:
+To Build a dara warehouse to organise, cleanse, validate, and format data.
+when you run serverless queries against your Amazon S3 data lake.
+When you want to create event driven ETL piplines.
+To understand your data assets.
+
+AWS Glue Benefits:
+Less Hassle
+Cost Effective
+More Power-Automates data Transformation
+
+Aws Architecture:
+
+Terminology:
+Data Catalog: Its Persistent meta data store in AWS Glue, It containes Table definations, job definations and other defination to manage our aws glue enviornment, 
+    Each Aws account has one data catalog per region.
+Classifier: It determines the Schema of the data
+    Aws provides classifers for csv, json, xml, avero and so on.
+    you can define your own classifer 
+    using 
+        -broke pattern
+        by specifing role tag in xml document
+Connection:It requries the property to connect to data store
+Crawler: It is a program to connect to data source or target, progress through the list of the classifer to determine the schema of the data and it create the meta data tables in the data catalog
+Database:It is set of associate data catalog's table definations organised in a logical group in AWS.
+Data Store: It is the repository for persitently storing the data e.g. S3 data bukets and relational databases
+Data Source: It is data store which used to input data process or transform
+Data Target: It is data store that a process or transform writed to.
+Development endpoint: It is an enviornment used to developeand test your Aws glue ETL scripts.
+job: It is buisness Logic which is required to perform the ETL work. 
+    It is composed of Transformation script data Sources and Data Targets.
+    Job run can be trigger Scheduled or trigger by a event
+Notebook server:It is Web based enviornment that can be used to run pyspark statement. pyspark is python dilate for ETL programming.
+    we can setup a notebbok server on a development endpoint to run pyspark statements with AWS Glue Extensions
+Script:It contains the code that extract data from the sources, transforms it and load into the targets.
+    AWS Glue Generates PySpark or Scala Script
+Table:It Consists the Name of the columns, Data type definations, partitions and other meta data about base data set.
+    The Schema of thedata is represented in AWS Glue Table defination
+Transform:we use the code logic to transform the data into different format.
+
+
+Demo:
+1. Create a data source for AWS Glue
+2. Crawl the data source to data caralog
+3. The crawled metadata in Glue tables
+4. AWS Glue jobs for data transformatioms .
+5. Editing the Glue script to transforn the data with Python and Spark
+
+
+
