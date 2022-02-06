@@ -4,50 +4,56 @@ boto3
 Documentation: https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html
 
 sys
+Usecases:
 GeeksForGeeks: https://www.geeksforgeeks.org/python-sys-module/
 Documentation: https://docs.python.org/3/library/sys.html
 Practice:
 
 StringIo:
+Usecases:
 GeeksForGeeks:https://www.geeksforgeeks.org/stringio-module-in-python/
 Documentation:
 Practice:
 
 os
+Usecases:
 GeeksForGeeks: https://www.geeksforgeeks.org/os-module-python-examples
 Documentation: https://docs.python.org/3/library/os.html
 Practice: 
 
 datetime
+Usecases:
 GeeksfoGeeks :https://www.geeksforgeeks.org/python-datetime-module/
 Documentation: https://docs.python.org/3/library/datetime.html
 Practice
 
 logging:
+Usecases:
 GeeksForGeeks: https://www.geeksforgeeks.org/logging-in-python/
 Documentation: https://docs.python.org/3/library/logging.html
 Practice:
 
 Urllib.parse
+Usecases:
 GeeksForGeeks: https://www.geeksforgeeks.org/python-urllib-module/
 Documentation: https://docs.python.org/3/library/urllib.parse.html
 Practice:
 
 requests
+Usecases:
 GeeksForGeeks: https://www.geeksforgeeks.org/python-requests-tutorial/
 Documentation: https://docs.python-requests.org/en/latest/
 Practice:
 
 json
+Usecases:
 GeeksForGeeks: https://www.geeksforgeeks.org/python-json/
 Documentation: https://docs.python.org/3/library/json.html
 Practice:
 
 base64
+Usecases:
 GeeksForGeeks: https://www.geeksforgeeks.org/encoding-and-decoding-base64-strings-in-python/
 Documentation: https://docs.python.org/3/library/base64.html
 Practice:
-15602
-2991542
-15205
-td head
+
