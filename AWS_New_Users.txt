@@ -1,0 +1,3 @@
+learn AWS Esswntials
+work on Ec2..
+    crete at least one one Instance and run it. and try to run python on this server
